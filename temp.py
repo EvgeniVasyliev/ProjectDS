@@ -1,3 +1,4 @@
+
 import numpy as np
 
 def random_predict(number:int=1) -> int:
@@ -19,7 +20,7 @@ def random_predict(number:int=1) -> int:
         count += 1
         if number < predict_number:
             right_number = predict_number
-            predict_number = int(np.mean(np.arange(left_number, right_number))) + 1          
+            predict_number = int(np.mean(np.arange(left_number, right_number))) + 1
         elif number > predict_number:
             left_number = predict_number
             predict_number = int(np.mean(np.arange(left_number, right_number))) + 1
